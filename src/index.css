@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Chicago-flag-inspired palette: two blue stripes, four red stars on white. */
+:root {
+  --bg: #f7f8fa;
+  --bg-elevated: #ffffff;
+  --text: #1c2230;
+  --text-muted: #545b6b;
+  --border: #dfe3ea;
+  --chi-blue: #2f9bd6;
+  --chi-blue-deep: #0d3b66;
+  --chi-red: #c8102e;
+  --skyline: #0d3b66;
+  --skyline-opacity: 0.08;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0a0e17;
+  --bg-elevated: #111726;
+  --text: #e7ebf3;
+  --text-muted: #9aa4b8;
+  --border: #232c40;
+  --chi-blue: #5fb8e8;
+  --chi-blue-deep: #6fc3f0;
+  --chi-red: #ff5c6c;
+  --skyline: #5fb8e8;
+  --skyline-opacity: 0.14;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
