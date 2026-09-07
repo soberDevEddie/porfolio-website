@@ -1,7 +1,6 @@
 const contacts = [
-  { label: 'Email', value: 'your.email@example.com', href: 'mailto:your.email@example.com' },
-  { label: 'GitHub', value: 'github.com/your-username', href: 'https://github.com/your-username' },
-  { label: 'LinkedIn', value: 'linkedin.com/in/your-name', href: 'https://linkedin.com/in/your-name' },
+  { label: 'Email', value: 'soberdeveddie@gmail.com', href: 'mailto:soberdeveddie@gmail.com' },
+  { label: 'GitHub', value: 'github.com/soberDevEddie', href: 'https://github.com/soberDevEddie' },
 ]
 
 export default function Contact() {
