@@ -1,3 +1,9 @@
+import { PopupButton } from '@typeform/embed-react'
+
+// TODO: replace with your real Typeform form ID (the part after typeform.com/to/).
+// Find it in Typeform under Share > Embed, e.g. https://form.typeform.com/to/abc123 -> "abc123".
+const TYPEFORM_ID = 'UdPISiOq'
+
 const contacts = [
   { label: 'Email', value: 'soberdeveddie@gmail.com', href: 'mailto:soberdeveddie@gmail.com' },
   { label: 'GitHub', value: 'github.com/soberDevEddie', href: 'https://github.com/soberDevEddie' },
@@ -13,11 +19,18 @@ export default function Contact() {
         Let's build something together.
       </h3>
       <p className="mt-4 max-w-xl text-lg" style={{ color: 'var(--text-muted)' }}>
-        Replace the details below with your own — email, GitHub, LinkedIn, or
-        wherever you'd like people to reach you.
+        Fill out a quick form and I'll get back to you, or reach me directly below.
       </p>
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <PopupButton
+          id={TYPEFORM_ID}
+          className="rounded-md px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+          style={{ background: 'var(--chi-blue-deep)' }}
+        >
+          Get in touch
+        </PopupButton>
+
         {contacts.map((c) => (
           <a
             key={c.label}
