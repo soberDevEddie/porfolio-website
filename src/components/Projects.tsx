@@ -7,10 +7,10 @@ export default function Projects() {
       <h2 className="text-sm font-semibold uppercase tracking-widest" style={{ color: 'var(--chi-blue)' }}>
         Projects
       </h2>
-      <p className="mt-4 max-w-2xl text-lg" style={{ color: 'var(--text-muted)' }}>
+      {/* <p className="mt-4 max-w-2xl text-lg" style={{ color: 'var(--text-muted)' }}>
         A selection of things I've built. Swap the entries in{' '}
         <code>src/data/projects.ts</code> for your own.
-      </p>
+      </p> */}
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
         {projects.map((project) => (

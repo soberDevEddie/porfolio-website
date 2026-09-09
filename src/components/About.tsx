@@ -18,6 +18,7 @@ export default function About() {
       >
         About
       </h2>
+      {/* TODO: add a headshot photo here (e.g. public/headshot.jpg) so visitors can see what I look like. See TODO.md. */}
       <p
         className='mt-4 max-w-2xl text-lg leading-relaxed'
         style={{ color: 'var(--text-muted)' }}
